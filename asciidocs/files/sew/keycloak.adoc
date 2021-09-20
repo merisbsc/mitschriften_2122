@@ -1,0 +1,11 @@
+= Keycloak
+
+== Was ist Keycloak?
+
+Open Source Produkt für das Access- und Identitymanagement unter der Leitung von RedHat.
+(https://www.keycloak.org/)
+
+== Demo
+
+STÜTZ-Video: https://www.youtube.com/watch?v=qiw_vnZycqI&ab_channel=ThomasStuetz
+
