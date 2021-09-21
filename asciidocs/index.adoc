@@ -18,6 +18,8 @@ ifdef::backend-html5[]
 === SEW
 - <<keycloak.adoc#, KEYCLOAK>>
 
+=== Mobile Computing
+- <<java-streaming.adoc#, JAVA-STREAMING>>
 
 == Andere Links
 - https://docs.google.com/spreadsheets/d/1GwpAwltRriljLwZdJ1UcbSRGUgy-gCV87-8PIJdx0_E/edit#gid=0[GOOGLE TABELLE]

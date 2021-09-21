@@ -1,0 +1,54 @@
+= Java Streaming
+
+Foliensatz auf Moodle unter: https://edufs.edu.htl-leonding.ac.at/moodle/pluginfile.php/169633/mod_resource/content/1/Streams.pdf[JAVA STREAMING API]
+
+== Basics
+- seit Java 8
+- um Operationen elegant auf Datenstrukturen anzuwenden (for-each, filter, map, ...)
+- Entwickelt um Collections ähnlich wie SQL-Statements zu behandeln
+- Es wird ein Objekt nach dem anderen geladen, und dann mit den jeweiligen Operationen bearbeitet (z.B. filter = where)
+- kein Zusammenhang zu java.io.OutputStream o.Ä.
+
+== Streaming Pipeline
+* Quelle
+** Datenquelle für Stream
+
+* Intermediate Operations (Transformations)
+** keine oder beliebig viele
+** Zum Filtern
+** Datenquelle ändert sich nicht, es entsteht eine "Submenge"
+
+* Terminal Operation
+** Produziert Endergebnis (ändern der Daten)
+** muss definiert sein, sonst passiert nichts
+
+image::images/streaming pipeline[]
+
+
+== Lambda
+- Erstellen von anonymen Methoden
+- können nicht über einen Namen aufgerufen werden, da sie nur in dem Scope der Funktion in der sie erstellt wird verfügbar ist und keinen Namen hat
+
+[source,java]
+----
+class Scratch {
+    public static void main(String[] args) {
+
+        //alte Version
+        Thread t = new Thread(new Runnable() {
+        @Override
+        public void run() {
+            System.out.println("Hello");
+        }
+        });
+
+        // Lambda Expression
+        Thread t2 = new Thread(() -> {
+            System.out.println("Welt");
+        });
+
+        t.start();
+        t2.start();
+    }
+}
+----
