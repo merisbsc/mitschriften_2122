@@ -16,10 +16,12 @@ ifdef::backend-html5[]
 
 == Mitschriften
 === SEW
+- https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/[LECTURE NOTES]
 - <<keycloak.adoc#, KEYCLOAK>>
 
 === Mobile Computing
 - <<java-streaming.adoc#, JAVA-STREAMING>>
+- <<kotlin.adoc#, KOTLIN>>
 
 == Andere Links
 - https://docs.google.com/spreadsheets/d/1GwpAwltRriljLwZdJ1UcbSRGUgy-gCV87-8PIJdx0_E/edit#gid=0[GOOGLE TABELLE]

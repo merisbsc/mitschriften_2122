@@ -22,8 +22,7 @@ Foliensatz auf Moodle unter: https://edufs.edu.htl-leonding.ac.at/moodle/pluginf
 ** Produziert Endergebnis (ändern der Daten)
 ** muss definiert sein, sonst passiert nichts
 
-image::images/streaming pipeline[]
-
+image::./images/streaming_pipeline.png[f]
 
 == Lambda
 - Erstellen von anonymen Methoden
@@ -51,4 +50,16 @@ class Scratch {
         t2.start();
     }
 }
+----
+
+== Beispiel
+[source,java]
+----
+// Ausgabe von Quadrat jeder Zahl die noch nicht
+// vorgekommen  ist
+List<Integer> numbers = Arrays.asList(3,4,67,3);
+List<Integer> distinct = numbers.stream()
+                                .map(i -> i*i)
+                                .distinct()
+                                .collect(Collectors.toList());
 ----
