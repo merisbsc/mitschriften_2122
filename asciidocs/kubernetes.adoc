@@ -6,10 +6,12 @@
 ** ganzer Server
 * Node
 ** ein Rechner des Servers
+* Master Node
+** kontrolliert die Worker-Nodes
 
 == Kubernetes Objects
 
-=== Pods
+=== Pod
 * kleinste Einheit die auf einem Node läuft
 * enthält einen oder mehrere Container
 * normalerweise nur einen Container pro Pod
@@ -20,7 +22,7 @@
 * Können im Code oder per Command erstellt und an Cluster gesendet werden
 * Werden gemanaged über "Controller" (Deployment)
 
-=== Deployments
+=== Deployment (Controller)
 * bekommt Anweisungen wieviele Container, Pods, ... es erstellen und managen soll
 * kümmert sich darum dass diese Anweisungen eingehalten werden
 * können pausiert, gelöscht und gerollbacked werden
