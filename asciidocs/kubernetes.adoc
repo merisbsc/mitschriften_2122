@@ -9,27 +9,36 @@
 
 == Kubernetes Objects
 
-* Pods
-** kleinste Einheit die auf einem Node läuft
-** enthält einen oder mehrere Container
-** normalerweise nur einen Container pro Pod
-** Kommunikation mit cluster-internen IP-Adresse
-** Kommunikation mit anderen Pods über localhost und port
-** Ephemeral: nicht persistiert, Daten sind weg wenn Pod weg ist
-** Persistierung über Volumes (Mapping auf äußere Verzeichnisse)
-** Können im Code oder per Command erstellt und an Cluster gesendet werden
-** Werden gemanaged über "Controller" (Deployment)
-* Deployments
-** bekommt Anweisungen wieviele Container, Pods, ... es erstellen und managen soll
-** kümmert sich darum dass diese Anweisungen eingehalten werden
-** können pausiert, gelöscht und gerollbacked werden
-** können dynamisch und automatisch gescaled werden
-* Services
-* Volumes
-* ...
+=== Pods
+* kleinste Einheit die auf einem Node läuft
+* enthält einen oder mehrere Container
+* normalerweise nur einen Container pro Pod
+* Kommunikation mit cluster-internen IP-Adresse
+* Kommunikation mit anderen Pods über localhost und port
+* Ephemeral: nicht persistiert, Daten sind weg wenn Pod weg ist
+* Persistierung über Volumes (Mapping auf äußere Verzeichnisse)
+* Können im Code oder per Command erstellt und an Cluster gesendet werden
+* Werden gemanaged über "Controller" (Deployment)
 
-=== Creation of Objects
+=== Deployments
+* bekommt Anweisungen wieviele Container, Pods, ... es erstellen und managen soll
+* kümmert sich darum dass diese Anweisungen eingehalten werden
+* können pausiert, gelöscht und gerollbacked werden
+* können dynamisch und automatisch gescaled werden
+
+=== Services
+
+=== Volumes
+
+=== ...
+
+== Erstellen von Objects
 * Imperatively
 ** es wird alles per Hand gemacht
 * Declaratively
 ** man gibt Rahmen vor und Kubernetes organisiert die Pods automatisch
+
+== kubectl-Commands
+
+* `kubectl create deployment <name> --image=<image-from-registry>`
+* `kubectl delete deployment <name>`
