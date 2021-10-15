@@ -1,0 +1,7 @@
+= Spatial DBMS
+
+
+== Was ist ein Spatial DBMS?
+Vereinigung von GIS und DBMS
+
+**GIS: **Speicherung von Räumlichen Daten (Google Maps für Datenbank)

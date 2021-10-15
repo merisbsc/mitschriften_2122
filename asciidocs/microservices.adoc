@@ -1,0 +1,15 @@
+= Microservices with Quarkus
+
+_https://htl-leonding-example.github.io/udemy-microservices-goncalves/[Stütz Notes]_
+
+== Was sind Microservices?
+
+=== Monolith?
+Ein großes Projekt in dem alle Komponenten aufeinander zugreifen. Alles hängt voneinander ab und ist daher auch prone to errors.
+
+=== Microservices
+Eine Applikation aufgeteilt auf viele kleine, unabhängige Dienste. Wenn ein Teilbereich abstürzt, sind die anderen davon nicht betroffen.
+
+== Was ist Microprofile?
+Enterprise Java für microservice-Architektur. Es wird nur ein Teil von JakartaEE verwendet, um den Application-Server kleiner zu halten.
+Ergibt ein .jar-File.

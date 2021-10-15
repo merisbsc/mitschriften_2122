@@ -1,0 +1,31 @@
+= Kubernetes
+
+== Begriffe
+
+* Cluster
+** ganzer Server
+* Node
+** ein Rechner des Servers
+
+== Kubernetes Objects
+
+* Pods
+** kleinste Einheit die auf einem Node läuft
+** enthält einen oder mehrere Container
+** normalerweise nur einen Container pro Pod
+** Kommunikation mit cluster-internen IP-Adresse
+** Kommunikation mit anderen Pods über localhost und port
+** Ephemeral: nicht persistiert, Daten sind weg wenn Pod weg ist
+** Persistierung über Volumes (Mapping auf äußere Verzeichnisse)
+** Können im Code oder per Command erstellt und an Cluster gesendet werden
+** Werden gemanaged über "Controller" (Deployment)
+* Deployments
+* Services
+* Volumes
+* ...
+
+=== Creation of Objects
+* Imperatively
+** es wird alles per Hand gemacht
+* Declaratively
+** man gibt Rahmen vor und Kubernetes organisiert die Pods automatisch

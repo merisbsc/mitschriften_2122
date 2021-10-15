@@ -18,10 +18,15 @@ ifdef::backend-html5[]
 === SEW
 - https://2122-5ahitm-sew.github.io/2122-5ahitm-sew-lecture-notes/[LECTURE NOTES]
 - <<keycloak.adoc#, KEYCLOAK>>
+- <<microservices.adoc#, MICROSERVICES>>
 
 === Mobile Computing
 - <<java-streaming.adoc#, JAVA-STREAMING>>
 - <<kotlin.adoc#, KOTLIN>>
+- <<CMS.adoc#, CONTENT MANAGEMENT SYSTEM>>
+
+=== ITP
+- <<kubernetes.adoc#, KUBERNETES>>
 
 == Andere Links
 - https://docs.google.com/spreadsheets/d/1GwpAwltRriljLwZdJ1UcbSRGUgy-gCV87-8PIJdx0_E/edit#gid=0[GOOGLE TABELLE]
