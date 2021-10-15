@@ -20,6 +20,10 @@
 ** Können im Code oder per Command erstellt und an Cluster gesendet werden
 ** Werden gemanaged über "Controller" (Deployment)
 * Deployments
+** bekommt Anweisungen wieviele Container, Pods, ... es erstellen und managen soll
+** kümmert sich darum dass diese Anweisungen eingehalten werden
+** können pausiert, gelöscht und gerollbacked werden
+** können dynamisch und automatisch gescaled werden
 * Services
 * Volumes
 * ...
