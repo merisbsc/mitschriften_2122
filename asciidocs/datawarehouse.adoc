@@ -19,4 +19,8 @@ Große Datenbank die alle Daten von z.B. einer Firma zusammenfasst, um große An
 === Roll-up/Drill-down Anfragen
 * mehr Attribute in group by = *drill-down*
 * weniger Attribute in group by = *roll-up*
+* ultimative Verdichtung ist *ohne* group by
 
+=== Flexible Auswertung: slice and dice
+* *slice:* einen Teil des verdichteten Datenwürfels rausnehmen um diesen genauer zu analysieren (z.B. nur die Produktgruppe "Haushaltsgeräte")
+* *dice:* den slice nochmal genauer zerteilen (alle Waschmaschinen aus der Gruppe "Haushaltsgeräte")
