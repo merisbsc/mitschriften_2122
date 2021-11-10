@@ -1,2 +1,22 @@
 = Data Warehouse
 
+== Was ist Data Warehouse?
+Große Datenbank die alle Daten von z.B. einer Firma zusammenfasst, um große Analysen für die Zukunft zu berechnen.
+
+* ist kein Backup, weil Daten massiv verändert werden.
+
+== Vortrag
+
+=== Stern-Schema
+* Fakten und Dimensionen
+** Fakten enthält Detaildaten und erleichtern keine Analysen
+** Faktentabellen werden versucht "schlank" zu halten(nur keys usw.)
+** Dimensionen definieren Faktentabelle (z.B. Verkauf -> Kunde, Filiale, Zeit). Man kann nach den Dimensionen "filtern"
+
+=== OLAP Anfragen
+* verdichten die Daten (Aggregatfunktionen wie sum, count, avg, ...)
+
+=== Roll-up/Drill-down Anfragen
+* mehr Attribute in group by = *drill-down*
+* weniger Attribute in group by = *roll-up*
+
