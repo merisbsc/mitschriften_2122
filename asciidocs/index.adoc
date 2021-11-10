@@ -28,5 +28,8 @@ ifdef::backend-html5[]
 === ITP
 - <<kubernetes.adoc#, KUBERNETES>>
 
+=== INSY
+- <<datawarehouse.adoc#, DATA WAREHOUSE>>
+
 == Andere Links
 - https://docs.google.com/spreadsheets/d/1GwpAwltRriljLwZdJ1UcbSRGUgy-gCV87-8PIJdx0_E/edit#gid=0[GOOGLE TABELLE]
