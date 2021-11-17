@@ -24,3 +24,15 @@ Große Datenbank die alle Daten von z.B. einer Firma zusammenfasst, um große An
 === Flexible Auswertung: slice and dice
 * *slice:* einen Teil des verdichteten Datenwürfels rausnehmen um diesen genauer zu analysieren (z.B. nur die Produktgruppe "Haushaltsgeräte")
 * *dice:* den slice nochmal genauer zerteilen (alle Waschmaschinen aus der Gruppe "Haushaltsgeräte")
+
+=== cube-Operator
+* erstellt verkürzt einen Cube (genau wie fettes "union"-statement)
+[source,sql]
+----
+select p.Hersteller, z.Jahr, f.Land, sum(v.Anzahl)
+from Verkäufe v, Produkte p, Zeit z, Filialen f
+where v.Produkt = p.ProduktNr and p.Produkttyp = 'Handy' and v.VerkDatum =
+    z.Datum and v.Filiale = f.Filialkennung
+group by cube (z.Jahr, p.Hersteller, f.Land);
+----
+
